@@ -1,26 +1,5 @@
 <p align="center">Universal online real estate market for everyone! Realtor app allows users to find there dream homes or rental properties, and it also allows users to list their properties for rent or sale.</p>
 
-## ✨ Features
-
-- Create a property listing
-- Delete or edit listing property
-- upload images of property
-- Edit profile name
-- Reset password
-- separate pages for offer,rent and sale
-- leaflet geolocation map
-- Authentication using google service
-- Fully responsive 
-- Single page application 
-
-## Tech Stack
-
-| Stack    | -                                                                                                                                                                                 | -                                                                                                                                                                           | -                                                                                                | -                                                                                                                | -                                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------------                                                                                | -------------------------------------------------------------------------------------------------                                                                           | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| FrontEnd | <p align="center"><img src="https://i.stack.imgur.com/Mmww2.png" width="100" height="100"> <br />Javascript</p>  | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.J0JE-fKbFT4bxpp8ilPpEQHaHa&pid=Api&P=0" width="100" height="100"> <br />React Js</p>  | <p align="center"><img src="https://tse4.mm.bing.net/th?id=OIP.9U1toerFxB8aiFRreLxEUQHaHa&pid=Api&P=0" width="100" height="100"> <br />Sass</p>   | <p align="center"><img src="https://tse2.mm.bing.net/th?id=OIP.pkfeNyjHH1w7Yqaqijlu3wHaFj&pid=Api&P=0" width="100" height="100"> <br />React Router</p>              | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.K2h-R5UxQTZaAK690Q-cbQHaEO&pid=Api&P=0" width="200" height="100"> <br />Swiper Js</p>
-| BackEnd  | <p align="center"><img src="https://tse1.explicit.bing.net/th?id=OIP.HdzDRa1T389o2JpxaPJ6LAHaFj&pid=Api&P=0" width="110" height="100"> <br />Firebase</p>     | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.WJJvF32dGqu3VX7EdPo3vQHaFj&pid=Api&P=0" width="110" height="100"> <br />Cloud Firestore</p> | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.8rR1tKj_ZtPodGUSJ9AiDwHaFj&pid=Api&P=0" width="140" height="100"> <br />Firebase Authentication</p> | <p align="center"><img src="https://tse2.explicit.bing.net/th?id=OIP.c2DYch8OspsEAxoVViXuKwAAAA&pid=Api&P=0" width="100" height="100"> <br />Firebase Cloud Storage</p>               | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.ypz_d6GL7n2nXfQnbw_ARAHaFj&pid=Api&P=0" width="150" height="100"> <br />Vercel</p> |
-
-
 ## :rocket: Quick start
 
 ### Installation
