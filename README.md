@@ -1,14 +1,3 @@
-<br />
-<p align="center"><img src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg" alt="realtor" width="300" height="50"></p>
-  <h1 align="center">Realtor</h1>
-  <h3 align="center">Buy, Rent and Sell the house</h3>
-
-
-  <p align="center">
-    <a href="https://heliosbugtracker.azurewebsites.net/Tracker">View Demo</a>
-  </p>
-</p>
-
 <p align="center">Universal online real estate market for everyone! Realtor app allows users to find there dream homes or rental properties, and it also allows users to list their properties for rent or sale.</p>
 
 ## ✨ Features
