@@ -1,61 +1,81 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 40;
-  background-color: #ffffff;
-  border-bottom-width: 1px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0); // Transparent by default
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
 
   &__container {
     display: flex;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
     align-items: center;
-    max-width: 72rem;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 1.5rem;
 
-    @media (max-width: 415px) {
+    @media (max-width: 640px) {
       flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo img {
+    height: 1.75rem;
+    cursor: pointer;
+  }
+
+  &__search {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid #e5e7eb;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 0.95rem;
+      transition: border 0.3s, box-shadow 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+      }
     }
   }
 
   &__menus {
     display: flex;
-    margin-left: 2.5rem;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media (max-width: 640px) {
+      margin-top: 0.75rem;
+      gap: 1rem;
+    }
   }
 
   &__menu {
-    margin-left: 1.5rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    color: rgb(156, 163, 175);
-    font-size: 0.9rem;
-    line-height: 1.25rem;
+    font-size: 0.95rem;
     font-weight: 600;
+    color: #6b7280;
     cursor: pointer;
-    transition: all 0.4s;
-  }
-  &__menu:hover,
-  &__menu.active {
-    color: #000;
-  }
+    transition: color 0.3s ease;
 
-  &__logo > img {
-    height: 1.25rem;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 415px) {
-  .header__logo > img {
-    margin-top: 8px;
-  }
-  .header__menus {
-    margin-left: 0px;
-  }
-  .header__menus > a:first-child {
-    margin-left: 0px;
+    &:hover,
+    &.active {
+      color: #111827;
+    }
   }
 }

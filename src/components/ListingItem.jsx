@@ -1,7 +1,7 @@
 import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import { MdLocationOn } from "react-icons/md";
-import { FaTrash } from "react-icons/fa";
+import { FaHeart, FaTrash } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import "./ListingItem.scss";
 
@@ -21,12 +21,18 @@ export default function ListingItem({ listing, id, onEdit, onDelete }) {
         <Moment className="listingItem__moment" fromNow>
           {listing.timestamp?.toDate()}
         </Moment>
+        <div className="listingItem__heart">
+          <FaHeart color="red" size={18} />
+        </div>
         <div className="listingItem__details">
-          <div className="listingItem__wrap">
-            <MdLocationOn className="listingItem__location-icon" />
-            <p className="listingItem__location-address">{listing.address}</p>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <p className="listingItem__name">{listing.name}</p>
+            <div className="listingItem__wrap">
+              <MdLocationOn className="listingItem__location-icon" />
+              <p className="listingItem__location-address">{listing.address}</p>
+            </div>
           </div>
-          <p className="listingItem__name">{listing.name}</p>
+
           <p className="listingItem__price">
             $
             {listing.offer
